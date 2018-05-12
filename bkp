@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes">
+
+    <title>front-in-campinas demo</title>
+
+    <script src="../node_modules/@webcomponents/webcomponentsjs/webcomponents-loader.js"></script>
+
+    <script type="module" src="../node_modules/@polymer/iron-demo-helpers/demo-pages-shared-styles.js"></script>
+    <script type="module" src="../node_modules/@polymer/iron-demo-helpers/demo-snippet.js"></script>
+    <script type="module" src="../front-in-campinas.js"></script>
+
+    <custom-style>
+      <style is="custom-style" include="demo-pages-shared-styles">
+        .default {
+          --demo-snippet-demo: {
+            background-color: #000;
+          }
+        }
+      </style>
+    </custom-style>
+  </head>
+  <body>
+    <div class="vertical-section-container centered">
+      <h3>Default front-in-campinas demo</h3>
+      <demo-snippet class="default">
+        <template>
+          <front-in-campinas></front-in-campinas>
+        </template>
+      </demo-snippet>
+    </div>
+    <div class="vertical-section-container centered">
+      <h3>Custom front-in-campinas demo</h3>
+      <demo-snippet>
+        <template>
+          <style is="custom-style">
+            .dark {
+              --color-dark: #000;
+              --color-dark-icon: #fff;
+            }
+          </style>
+          <front-in-campinas class="dark"></front-in-campinas>
+        </template>
+      </demo-snippet>
+    </div>
+  </body>
+</html>
